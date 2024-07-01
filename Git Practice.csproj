@@ -7,5 +7,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+    <ItemGroup>
+      <_CustomFiles Include="automation\commit-msg.sample" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_CustomFiles)" DestinationFolder=".git/hooks" />
+  </Target>
 
 </Project>
