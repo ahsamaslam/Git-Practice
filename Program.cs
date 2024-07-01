@@ -1,2 +1,2 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!.... I directly commiting asdfsddf  git");
+Console.WriteLine("Hello, World!.... I directly commiting dsfsd  git");
